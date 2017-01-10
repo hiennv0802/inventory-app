@@ -13,8 +13,8 @@ import { PriceDisplayComponent } from './price-display/price-display.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
     ProductListComponent,
+    ProductComponent,
     ProductImageComponent,
     ProductDepartmentComponent,
     PriceDisplayComponent

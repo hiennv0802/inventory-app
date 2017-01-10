@@ -1,12 +1,16 @@
-<product-image [product]="product">
-</product-image>
-<div class="col-md-4">
-  <div class="header">{{ product.name }}</div>
-  <div class="meta">
-    <div class="product-sku">SKU #{{ product.sku }}</div>
+<div class="col-md-6 product-row">
+  <div class="col-md-4 product-image-group">
+    <app-product-image [product]="product">
+    </app-product-image>
   </div>
-  <div class="description">
-    <product-department [product]="product"></product-department>
+  <div class="col-md-8">
+    <div class="header">{{ product.name }}</div>
+    <div class="meta">
+      <div class="product-sku">SKU #{{ product.sku }}</div>
+    </div>
+    <div class="description">
+      <app-product-department [product]="product"></app-product-department>
+    </div>
+    <app-price-display [price]="product.price"></app-price-display>
   </div>
-  <price-display [price]="product.price"></price-display>
 </div>
